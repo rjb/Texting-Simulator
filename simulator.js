@@ -1,5 +1,5 @@
 // Returns characters typed per minute in milliseconds
-function chpmToMilliseconds(chpm = 100) {
+function chpmToMilliseconds(chpm) {
   return (Math.random() * (1000 / (chpm / 60)));
 }
 
@@ -9,7 +9,7 @@ function wpmToMilliseconds(string, wpm) {
 }
 
 // Types out any phrase to any html element at rate of x chpm
-function type(string, element, chpm) {
+function type(string, element, chpm = 100) {
   (function likeAHuman(i) {
     if (string.length <= i++) { return element.innerHTML = string; }
 
