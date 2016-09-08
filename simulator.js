@@ -3,7 +3,7 @@ function chpmToMilliseconds(chpm = 100) {
   return (Math.random() * (1000 / (chpm / 60)));
 }
 
-// Returns words per minute typed in milliseconds
+// Returns words typed per minute in milliseconds
 function wpmToMilliseconds(string, wpm) {
   return ((string.split(' ').length / (wpm / 60)) * 1000)
 }
