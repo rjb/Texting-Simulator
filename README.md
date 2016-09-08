@@ -1,6 +1,6 @@
 # Texting Simulator
 
-Simulates typing and back and forth text conversations.
+Simulates texting, and back and forth text conversations.
 
 ### type()
 
