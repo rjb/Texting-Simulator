@@ -1,6 +1,11 @@
-// Converts characters typed per minute to milliseconds
+// Returns characters typed per minute in milliseconds
 function chpmToMilliseconds(chpm = 100) {
   return (Math.random() * (1000 / (chpm / 60)));
+}
+
+// Returns words per minute typed in milliseconds
+function wpmToMilliseconds(string, wpm) {
+  return ((string.split(' ').length / (wpm / 60)) * 1000)
 }
 
 // Types out any phrase to any html element at rate of x chpm
@@ -23,7 +28,7 @@ function type(string, element, chpm) {
 // Pause, type, print
 function convo(string, element, wpm, callback) {
     var pause = 1250;
-    var rate = ((string.split(' ').length / (wpm / 60)) * 1000) * 0.65
+    var rate = wpmToMilliseconds(string, wpm);
 
     setTimeout(function() { element.innerHTML = 'Typing...'; }, pause);
 
