@@ -14,14 +14,14 @@ function type(string, element, chpm = 100) {
     if (string.length <= i++) { return element.innerHTML = string; }
 
     var milliseconds = chpmToMilliseconds(chpm);
-    var currentString = string.substring(0, i)
+    var currentString = string.substring(0, i);
 
     element.innerHTML = currentString;
 
-    setTimeout(function() { likeAHuman(i); }, milliseconds);
+    setTimeout(function() { likeAHuman(i); }, milliseconds)
 
     console.log(milliseconds);
-    console.log(currentString)
+    console.log(currentString);
   })(0)
 }
 
