@@ -2,6 +2,8 @@
 
 Simulates texting, and back and forth text conversations.
 
+See it in action at: [https://jsfiddle.net/raffybanks/706dc94p/](https://jsfiddle.net/raffybanks/706dc94p/)
+
 ### type()
 
 Simply pass a string, element, and chpm and type() will simulate typing at the chpm rate.
